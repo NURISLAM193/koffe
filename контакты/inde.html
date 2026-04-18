@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700;800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#fcdbd4",
+                    "on-primary-fixed": "#201a18",
+                    "surface-variant": "#44302b",
+                    "outline-variant": "#4f4442",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#352f2d",
+                    "surface-container-high": "#392521",
+                    "on-tertiary": "#3e2c26",
+                    "tertiary-fixed-dim": "#ddc1b7",
+                    "tertiary-container": "#2c1c16",
+                    "on-background": "#fcdbd4",
+                    "on-surface": "#fcdbd4",
+                    "on-secondary": "#442a22",
+                    "on-primary-fixed-variant": "#4c4542",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "error-container": "#93000a",
+                    "secondary": "#e7bdb1",
+                    "primary-fixed": "#ece0dc",
+                    "on-surface-variant": "#d3c3c0",
+                    "on-tertiary-fixed": "#271812",
+                    "on-tertiary-container": "#9b8279",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#190a07",
+                    "background": "#1f0f0b",
+                    "inverse-on-surface": "#402c27",
+                    "secondary-fixed": "#ffdbd0",
+                    "tertiary-fixed": "#fadcd2",
+                    "tertiary": "#ddc1b7",
+                    "error": "#ffb4ab",
+                    "surface-container": "#2d1b17",
+                    "primary": "#cfc4c0",
+                    "surface-dim": "#1f0f0b",
+                    "primary-container": "#241e1c",
+                    "on-primary-container": "#8e8582",
+                    "on-secondary-container": "#d4aca0",
+                    "outline": "#9c8e8b",
+                    "surface": "#1f0f0b",
+                    "secondary-fixed-dim": "#e7bdb1",
+                    "on-secondary-fixed": "#2c160e",
+                    "inverse-primary": "#655d5a",
+                    "primary-fixed-dim": "#cfc4c0",
+                    "surface-tint": "#cfc4c0",
+                    "surface-container-low": "#291713",
+                    "on-tertiary-fixed-variant": "#56423b",
+                    "surface-container-highest": "#44302b",
+                    "surface-bright": "#493430",
+                    "secondary-container": "#5d4037"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#1f0f0b]/90 backdrop-blur-xl bg-[#190a07] shadow-[0_10px_30px_-15px_rgba(45,27,23,0.3)]">
+<nav class="flex justify-between items-center w-full px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-bold text-[#cfc4c0] tracking-tighter">Nuri Coffee</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300 hover:bg-[#44302b]/20 px-3 py-1 rounded-lg" href="/главная/glav.html">Главная</a>
+<a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300 hover:bg-[#44302b]/20 px-3 py-1 rounded-lg" href="/о нас/indexx.html">О нас</a>
+<a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300 hover:bg-[#44302b]/20 px-3 py-1 rounded-lg" href="/меню/index.html">Меню</a>
+<a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300 hover:bg-[#44302b]/20 px-3 py-1 rounded-lg" href="/галерея/ind.html">Галерея</a>
+<a class="font-['Noto_Serif'] font-medium tracking-wide text-[#e7bdb1] border-b-2 border-[#e7bdb1] pb-1" href="#">Контакты</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform active:scale-95 hover:bg-secondary">
+                Забронировать стол
+            </button>
+</nav>
+</header>
+<main class="flex-grow pt-32 pb-20">
+<!-- Hero Section -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-20">
+<div class="relative h-[400px] rounded-xl overflow-hidden mb-12">
+<img alt="Атмосфера ремесленного кофе" class="w-full h-full object-cover brightness-50" data-alt="Cinematic close-up of steam rising from a porcelain coffee cup on a dark mahogany table with warm moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2fHMzXxdqgw2hqWCzaS2mWzKx6ruLbc-rvbBj9FVW_nYELOoHE8v5aKEa_Aem4RIM6-AUWwMEfpevZZAIT27pT6BNlfPe_5SMu02NixQmhCW-GapK7sa0qE3eUA1vXRNIZTJFLMqjO_vrljWyUNfRF3hcaNCmgtco9-Nuzlt0uMw427OOneC8TqYzW4xnnS-gO6rLBG1ZnJqOeyHD62ftlQYArFr-tqz-at1fvNJURVZ3LBSSFer0SE347WNsNCrmhfyYvoe0OpOo"/>
+<div class="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
+<span class="font-label text-sm tracking-[0.2em] uppercase text-secondary mb-4">Свяжитесь с нами</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary mb-6 max-w-3xl leading-tight">Ритуал общения</h1>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Info Column -->
+<div class="lg:col-span-5 space-y-12">
+<div>
+<h2 class="font-headline text-3xl font-bold text-primary mb-8 border-l-4 border-secondary pl-6">Наша обитель</h2>
+<p class="text-on-surface-variant leading-relaxed max-w-md mb-10">
+                            Посетите нас в самом сердце города, чтобы насладиться изысканным кофе, который пробуждает чувства и успокаивает душу.
+                        </p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded-xl text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-label font-bold text-primary uppercase tracking-wider text-xs mb-1">Местоположение</h4>
+<p class="text-on-surface">пр-т Брюмастер, 42, Квартал Мастеров<br/>Сиэтл, WA 98101</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded-xl text-secondary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-label font-bold text-primary uppercase tracking-wider text-xs mb-1">Телефон</h4>
+<p class="text-on-surface">+1 (555) 234-8890</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-surface-container-highest p-3 rounded-xl text-secondary">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-label font-bold text-primary uppercase tracking-wider text-xs mb-1">Часы работы</h4>
+<div class="grid grid-cols-2 gap-x-8 text-on-surface">
+<span>Пн - Пт</span> <span>07:00 - 20:00</span>
+<span>Суббота</span> <span>08:00 - 21:00</span>
+<span>Воскресенье</span> <span>09:00 - 18:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Integration -->
+<div class="rounded-xl overflow-hidden grayscale contrast-125 opacity-80 hover:opacity-100 transition-opacity duration-500 h-64 relative bg-surface-container-low">
+<img alt="Карта проезда" class="w-full h-full object-cover" data-alt="Minimalist dark themed map showing city grid with a single elegant copper pin marker" data-location="Seattle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW_LhZxKjbSixeT7XzOLK3_b4wrHFp4zq9FLsyH6ZoW6llnjicyIJBFTlfh3LCbw7pid5g-cuZN00kz8yuK1CQDSoD0L_9zRovRwOYLFUD_vGXipxAJLPzsNZ2n-mIIDl0710jxh0ya5pwWLk5JQ9lkdSXiKJe0u7FS7eH73C_2bKwf7Novyq_rY_hWs20AfdUIokEh9DUo4GcNZmQIOBHzszKGWurZDlz_r4xyglFEF8KXdN0Zc1_xxmXFhkuHdBG4uSbrhZ-03PX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-primary text-on-primary text-xs px-3 py-1 rounded-full font-bold uppercase tracking-widest">Найти нас</span>
+</div>
+</div>
+</div>
+<!-- Contact Form Column -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-low p-8 md:p-12 rounded-xl shadow-2xl relative overflow-hidden">
+<!-- Decorative glow -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+<h3 class="font-headline text-2xl text-primary mb-2">Отправить сообщение</h3>
+<p class="text-on-surface-variant text-sm mb-8">Вопросы по мероприятиям, оптовым закупкам или просто приветствие.</p>
+<form class="space-y-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant ml-1">Полное имя</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface placeholder:text-on-surface-variant/30 focus:ring-1 focus:ring-secondary/40 transition-all outline-none" placeholder="Элиас Торн" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant ml-1">Электронная почта</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface placeholder:text-on-surface-variant/30 focus:ring-1 focus:ring-secondary/40 transition-all outline-none" placeholder="elias@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant ml-1">Тема</label>
+<select class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface appearance-none focus:ring-1 focus:ring-secondary/40 transition-all outline-none">
+<option>Общий вопрос</option>
+<option>Бронирование столика</option>
+<option>Проведение мероприятий</option>
+<option>Оптовое сотрудничество</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-[0.1em] text-on-surface-variant ml-1">Сообщение</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-lg p-4 text-on-surface placeholder:text-on-surface-variant/30 focus:ring-1 focus:ring-secondary/40 transition-all outline-none resize-none" placeholder="Чем мы можем помочь в создании вашего ритуала?" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-secondary transition-all transform active:scale-95" type="submit">
+                                Отправить запрос
+                            </button>
+</form>
+</div>
+<!-- Side-by-side secondary images for layout interest -->
+<div class="grid grid-cols-2 gap-6 mt-8">
+<div class="h-48 rounded-xl overflow-hidden">
+<img alt="Приготовление кофе" class="w-full h-full object-cover" data-alt="Macro photo of coffee beans falling into a grinder with dark shadows and warm highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnGEhXAwqcLnl346ToOzG3WEjZPOib4sWbnH1_RrKYby9sW8FYj4a0zamn4MN9QceN34I-8VokgK-WyUakFPIlfttz4H8mNahQuIg7gQY6yYak_1K62QMHfbjqmj3xGDqTNhV-_lRxyvAcYrfdotuWFkNtgKYhs2rw9RlzTHwddvKvTDZf-q1k7gCcsbIUxiA6sOwHzVpETFVLVQO8kNULZAqsoK-jYZwp5IDXx5WLRt0tj6Uqa46D08ZgBmyFuQ-Tbw8fgFLrbwdg"/>
+</div>
+<div class="h-48 rounded-xl overflow-hidden flex items-center justify-center bg-surface-container">
+<div class="text-center p-4">
+<span class="material-symbols-outlined text-4xl text-secondary mb-2">local_cafe</span>
+<p class="font-headline italic text-primary">Свежая обжарка каждый день.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#190a07] w-full py-16 px-12 mt-auto border-t border-[#cfc4c0]/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="font-['Noto_Serif'] text-xl text-[#e7bdb1]">Nuri Coffee</div>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Instagram</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Facebook</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Twitter</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Политика конфиденциальности</a>
+</div>
+<p class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50">
+                © 2024 Nuri Coffee. Ритуал зерна.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="dark" lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700;800&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-surface": "#fcdbd4",
+                "on-primary-fixed": "#201a18",
+                "surface-variant": "#44302b",
+                "outline-variant": "#4f4442",
+                "on-error-container": "#ffdad6",
+                "on-primary": "#352f2d",
+                "surface-container-high": "#392521",
+                "on-tertiary": "#3e2c26",
+                "tertiary-fixed-dim": "#ddc1b7",
+                "tertiary-container": "#2c1c16",
+                "on-background": "#fcdbd4",
+                "on-surface": "#fcdbd4",
+                "on-secondary": "#442a22",
+                "on-primary-fixed-variant": "#4c4542",
+                "on-secondary-fixed-variant": "#5d4037",
+                "error-container": "#93000a",
+                "secondary": "#e7bdb1",
+                "primary-fixed": "#ece0dc",
+                "on-surface-variant": "#d3c3c0",
+                "on-tertiary-fixed": "#271812",
+                "on-tertiary-container": "#9b8279",
+                "on-error": "#690005",
+                "surface-container-lowest": "#190a07",
+                "background": "#1f0f0b",
+                "inverse-on-surface": "#402c27",
+                "secondary-fixed": "#ffdbd0",
+                "tertiary-fixed": "#fadcd2",
+                "tertiary": "#ddc1b7",
+                "error": "#ffb4ab",
+                "surface-container": "#2d1b17",
+                "primary": "#cfc4c0",
+                "surface-dim": "#1f0f0b",
+                "primary-container": "#241e1c",
+                "on-primary-container": "#8e8582",
+                "on-secondary-container": "#d4aca0",
+                "outline": "#9c8e8b",
+                "surface": "#1f0f0b",
+                "secondary-fixed-dim": "#e7bdb1",
+                "on-secondary-fixed": "#2c160e",
+                "inverse-primary": "#655d5a",
+                "primary-fixed-dim": "#cfc4c0",
+                "surface-tint": "#cfc4c0",
+                "surface-container-low": "#291713",
+                "on-tertiary-fixed-variant": "#56423b",
+                "surface-container-highest": "#44302b",
+                "surface-bright": "#493430",
+                "secondary-container": "#5d4037"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-on-secondary">
+    <header class="fixed top-0 w-full z-50 bg-[#1f0f0b]/90 backdrop-blur-xl shadow-[0_10px_30px_-15px_rgba(45,27,23,0.3)]">
+        <nav class="flex justify-between items-center w-full px-8 h-20 max-w-screen-2xl mx-auto">
+            <div class="font-['Noto_Serif'] text-2xl font-bold text-[#cfc4c0] tracking-tighter">Nuri Coffee</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/главная/glav.html">Главная</a>
+                <a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/о нас/indexx.html">О нас</a>
+                <a class="font-['Noto_Serif'] font-medium tracking-wide text-[#e7bdb1] border-b-2 border-[#e7bdb1] pb-1" href="#">Меню</a>
+                <a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/галерея/ind.html">Галерея</a>
+                <a class="font-['Noto_Serif'] font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/контакты/inde.html">Контакты</a>
+            </div>
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-medium transition-all duration-300 ease-in-out transform active:scale-95 hover:bg-secondary">
+                Забронировать стол
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <section class="max-w-screen-xl mx-auto px-8 mb-20 text-center">
+            <span class="font-label text-secondary tracking-[0.2em] uppercase text-xs mb-4 block">Ритуал кофейного зерна</span>
+            <h1 class="font-headline text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight">Наше авторское меню</h1>
+            <p class="max-w-2xl mx-auto text-on-surface-variant font-light text-lg">Каждая чашка рассказывает историю происхождения, каждый кусочек — симфония мастерства. Попробуйте нашу подборку крафтового обжара и кондитерских изделий.</p>
+        </section>
+
+        <section class="max-w-screen-xl mx-auto px-8 mb-24">
+            <div class="flex items-baseline gap-4 mb-12">
+                <h2 class="font-headline text-3xl font-bold text-primary">Кофейные сорта</h2>
+                <div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-surface-container-low rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+                    <div class="relative h-72 overflow-hidden">
+                        <img alt="Крупный план насыщенного эспрессо с густой пенкой в темной керамической чашке на деревянной поверхности" class="w-full h-full object-cover rounded-tl-xl rounded-br-md transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKlS0raB-J9rj9eaO_Ftwiw8O6msETGyrEh0XWQnVF4u6F0DZX3lGSva8RNhzv-QdRDRgVs-2WyYyIzpNfJq93E2BdzAWazi0wGPULCLqvLK8-B8stYPcGSsq3xrjoDnqcHjN4QPXyUAkgXKCOERh2Gw9JA4UY_AAaB80AlUJo9U923hyEIMaPb8X6iboeulWu1rGqn3jM2s7t4JDpHAn4s3IRylLdt86KIZDhPGfauUYDoYbxiCnjqdZa6bcEox3HFy7BGP9ARAF0"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-headline text-2xl font-semibold text-primary">Эспрессо Арабика</h3>
+                            <span class="font-headline text-secondary text-lg">450 ₽</span>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Моносорт из эфиопского высокогорья с яркими цитрусовыми нотками и шелковистым шоколадным послевкусием.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] uppercase tracking-wider text-on-surface-variant">Моносорт</span>
+                            <span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] uppercase tracking-wider text-on-surface-variant">Темная обжарка</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-surface-container-low rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+                    <div class="relative h-72 overflow-hidden">
+                        <img alt="Красиво налитый латте с замысловатым латте-артом в виде сердца в белой керамической кружке" class="w-full h-full object-cover rounded-tl-xl rounded-br-md transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC28Q67qod7ObIcCapQETOs9ckY5oCJXIABMSXnpA0dOS_lnJzDZ170r15lCoc5kntu6-mlvBnSWuji5ckqgW0V_4Eg4jgnliAx5kjDUD2vkiak1eVSwIvb1epFQdxZfAHP_vom4ZQJ01o1kUX1YLY-o5bDjdDZkxQ_AniqsNviTsaNvjXtPjH7ossr4CCaanInQCy_xPEtlUj3xsMYm8cLdsfUJ2UNOLGON5hs0bsjWIgJu1og9FjQb9SeyUg3X44ogrwrY7aHoGD8"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-headline text-2xl font-semibold text-primary">Бархатный Латте</h3>
+                            <span class="font-headline text-secondary text-lg">575 ₽</span>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Взбитая микропена, добавленная в наш фирменный купаж, создает гармоничный баланс сладкого молока и крепкого кофе.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] uppercase tracking-wider text-on-surface-variant">Фермерское молоко</span>
+                            <span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] uppercase tracking-wider text-on-surface-variant">Фирменный купаж</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-surface-container-low rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+                    <div class="relative h-72 overflow-hidden">
+                        <img alt="Кофе V60, наливаемый в стеклянный графин, изящно поднимающийся пар" class="w-full h-full object-cover rounded-tl-xl rounded-br-md transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpbrO9zKEPQPv4XhduoTR_-R1aIjo0EkTmo_9aH7XQ_SurDT6KiHMAmp_iDTvwQf3C9p_iIUjiTDyM_j2b0bjaMIFCQiA2xu-Rby2LeEOqEnOOcOapHgZZ6zIGWQr3HzmlcF_nE-W9w1W0ESJUaNHIQrnHqwe2ypyzbiPuuU5pgH0y5qLs4BjC_OX9Avg1LtLb-SDH6uFZCsGfEOzy-zjWeEX3O9mQdbCotbeaUt4an4dacPQxLcl8LowBOVI90MYnRhO2nejmHNj"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-headline text-2xl font-semibold text-primary">Медленный фильтр</h3>
+                            <span class="font-headline text-secondary text-lg">625 ₽</span>
+                        </div>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Ручной метод заваривания V60, раскрывающий сложные цветочные и фруктовые профили нашего сезонного урожая.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] uppercase tracking-wider text-on-surface-variant">Пуровер V60</span>
+                            <span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] uppercase tracking-wider text-on-surface-variant">Сезонный</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-screen-xl mx-auto px-8">
+            <div class="flex items-baseline gap-4 mb-12">
+                <h2 class="font-headline text-3xl font-bold text-primary">Ремесленная выпечка</h2>
+                <div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="flex flex-col md:flex-row bg-surface-container-low rounded-xl overflow-hidden group">
+                    <div class="md:w-1/2 h-80 md:h-auto overflow-hidden">
+                        <img alt="Кусочек сливочного чизкейка в нью-йоркском стиле с золотистой корочкой на темной тарелке" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3cmAUl6SW2ZlHajb0LbuRdvCB_Zx5FMRs4eTWU7bWzzN0R7hXNLYDxazaqReG4rlsFv1UnGRrWqRUrwbZO4wLmORRD8R8D6AfHl3EfzerzMq7xUKb_GkI2jIbnIXJurwANMpeEyFHm8smhIDhxinjbNpogZQYfsF8Q05Ko9GM3L-8FHYeVha9NbSoMiTpAL9ExXzeK8kObtZr9vTC8D7vfH3NLv0xXP5SVi8BCn0jSyRm1HI9f2DYYLhGAWEMbS4NWek-83_bEFdI"/>
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                        <span class="font-label text-secondary tracking-widest text-[10px] uppercase mb-2">Спецпредложение шефа</span>
+                        <h3 class="font-headline text-3xl font-bold text-primary mb-4">Чизкейк с жженым медом</h3>
+                        <p class="text-on-surface-variant text-base font-light mb-6">Плотный бархатистый чизкейк в баскском стиле с добавлением карамелизированного местного меда и щепотки морской соли.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="font-headline text-secondary text-xl">850 ₽</span>
+                            <button class="material-symbols-outlined text-primary p-2 rounded-full border border-outline-variant/20 hover:bg-primary hover:text-on-primary transition-colors">add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse bg-surface-container-low rounded-xl overflow-hidden group">
+                    <div class="md:w-1/2 h-80 md:h-auto overflow-hidden">
+                        <img alt="Десертный капкейк из темного шоколада с высоким содержанием крема мокко и кофейным зерном сверху" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8gF0xh97GXTuDMAPRvPaEBoa5zDIbWOZ1h74wXauag58wkz314BMne4x0iZgikN4Vk-avSMS9BoAhPWj7BrMD7AFpcUnVfxjzV2dBrvalp7DHmvgT5slLTi8IxhpKAd7F6I6_xtQafxTS7DqF6C1LWYnOVmNkp2vMsuIgxZy27A3pWs4u6pH4m6K-5PhgDM3SnAWPhtIqDxywcGCzSGi9iNKNDk7naXsHJ2wc2mWw8JLRSjmKHe18O8bjiUb1MVLxTttpLW9zAQwO"/>
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                        <span class="font-label text-secondary tracking-widest text-[10px] uppercase mb-2">Фирменное</span>
+                        <h3 class="font-headline text-3xl font-bold text-primary mb-4">Капкейк «Полночный мокко»</h3>
+                        <p class="text-on-surface-variant text-base font-light mb-6">Основа из какао Valrhona с ганашем из взбитого эспрессо и украшением в виде кофейного зерна в золотой пыльце.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="font-headline text-secondary text-xl">600 ₽</span>
+                            <button class="material-symbols-outlined text-primary p-2 rounded-full border border-outline-variant/20 hover:bg-primary hover:text-on-primary transition-colors">add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-screen-xl mx-auto px-8 mt-32">
+            <div class="relative rounded-3xl overflow-hidden p-16 md:p-24 text-center">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-[#1f0f0b]/80 z-10"></div>
+                    <img alt="Абстрактное мягкое размытие кофейного пара и золотистого теплого света на темных деревянных поверхностях" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZiYo0b-ywIWbHWmFs8Z6Dk9yDUyw_eAN554Ggf0VqAM4NxsuTsc5oPQR7EhdO04RYRRPSDD7W84vhumYCA7_4KiiTot7RDuKOV3tC0UMb9ob_UcgV-gLpaHEH4Cg2FCQ4nXrkDyieZPLEz5LTh2qyl8XbezjrXfCQ8mbeA9a4a2C49zuvGJUeUSCr5ZMxBLPBqvVp2YX85QRnkdwPJ_wD5ZY0yA6ZHJbgy5VwDYs-cSzvKNzjayNglSM8QR812z7HQBIgg12iGGym"/>
+                </div>
+                <div class="relative z-20">
+                    <h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8">Готовы к ритуалу?</h2>
+                    <p class="text-on-surface-variant max-w-xl mx-auto mb-10 text-lg">Присоединяйтесь к нам в тихом уголке города, где время замедляется, а воздух наполнен ароматом свежеобжаренных зерен.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-6">
+                        <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-semibold hover:bg-secondary transition-colors">Забронировать стол</button>
+                        <button class="border border-primary/30 text-primary px-10 py-4 rounded-full font-semibold hover:bg-primary/5 transition-colors">Частные мероприятия</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#190a07] w-full py-16 px-12 mt-auto border-t border-[#cfc4c0]/10">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+            <div class="font-['Noto_Serif'] text-xl text-[#e7bdb1]">Nuri Coffee</div>
+            <div class="text-[#cfc4c0]/50 font-['Manrope'] text-sm tracking-widest uppercase text-center md:text-left">
+                © 2024 Nuri Coffee. Ритуал кофейного зерна.
+            </div>
+            <div class="flex gap-8">
+                <a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Instagram</a>
+                <a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Facebook</a>
+                <a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Twitter</a>
+                <a class="font-['Manrope'] text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

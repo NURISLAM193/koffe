@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Галерея | Nuri Coffee</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#fcdbd4",
+                    "on-primary-fixed": "#201a18",
+                    "surface-variant": "#44302b",
+                    "outline-variant": "#4f4442",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#352f2d",
+                    "surface-container-high": "#392521",
+                    "on-tertiary": "#3e2c26",
+                    "tertiary-fixed-dim": "#ddc1b7",
+                    "tertiary-container": "#2c1c16",
+                    "on-background": "#fcdbd4",
+                    "on-surface": "#fcdbd4",
+                    "on-secondary": "#442a22",
+                    "on-primary-fixed-variant": "#4c4542",
+                    "on-secondary-fixed-variant": "#5d4037",
+                    "error-container": "#93000a",
+                    "secondary": "#e7bdb1",
+                    "primary-fixed": "#ece0dc",
+                    "on-surface-variant": "#d3c3c0",
+                    "on-tertiary-fixed": "#271812",
+                    "on-tertiary-container": "#9b8279",
+                    "on-error": "#690005",
+                    "surface-container-lowest": "#190a07",
+                    "background": "#1f0f0b",
+                    "inverse-on-surface": "#402c27",
+                    "secondary-fixed": "#ffdbd0",
+                    "tertiary-fixed": "#fadcd2",
+                    "tertiary": "#ddc1b7",
+                    "error": "#ffb4ab",
+                    "surface-container": "#2d1b17",
+                    "primary": "#cfc4c0",
+                    "surface-dim": "#1f0f0b",
+                    "primary-container": "#241e1c",
+                    "on-primary-container": "#8e8582",
+                    "on-secondary-container": "#d4aca0",
+                    "outline": "#9c8e8b",
+                    "surface": "#1f0f0b",
+                    "secondary-fixed-dim": "#e7bdb1",
+                    "on-secondary-fixed": "#2c160e",
+                    "inverse-primary": "#655d5a",
+                    "primary-fixed-dim": "#cfc4c0",
+                    "surface-tint": "#cfc4c0",
+                    "surface-container-low": "#291713",
+                    "on-tertiary-fixed-variant": "#56423b",
+                    "surface-container-highest": "#44302b",
+                    "surface-bright": "#493430",
+                    "secondary-container": "#5d4037"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .asymmetric-rounding-lg {
+            border-top-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            border-top-right-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+
+    
+<header class="fixed top-0 w-full z-50 bg-[#1f0f0b]/90 glass-nav shadow-[0_10px_30px_-15px_rgba(45,27,23,0.3)]">
+<nav class="flex justify-between items-center w-full px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="font-headline text-2xl font-bold text-[#cfc4c0] tracking-tighter">Nuri Coffee</div>
+
+
+<div class="hidden md:flex items-center gap-10">
+<a class="font-headline font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/главная/glav.html">Главная</a>
+<a class="font-headline font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/о нас/indexx.html">О нас</a>
+<a class="font-headline font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/меню/index.html">Меню</a>
+<a class="font-headline font-medium tracking-wide text-[#e7bdb1] border-b-2 border-[#e7bdb1] pb-1" href="/галерея/ind.html">Галерея</a>
+<a class="font-headline font-medium tracking-wide text-[#cfc4c0]/70 hover:text-[#cfc4c0] transition-all duration-300" href="/контакты/inde.html">Контакты</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label font-semibold tracking-tight ease-in-out duration-300 transform active:scale-95 hover:bg-secondary transition-colors">
+            Забронировать стол
+        </button>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+
+    
+<section class="mb-20">
+<div class="max-w-3xl">
+<span class="font-label text-secondary text-sm tracking-[0.2em] uppercase mb-4 block">Визуальная история</span>
+<h1 class="font-headline text-5xl md:text-7xl text-primary leading-tight mb-6">Ритуал кофейного зерна</h1>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                Загляните в наш мир. Курируемая коллекция моментов, запечатлевших пар, мастерство и тихую близость Nuri Coffee.
+            </p>
+</div>
+</section>
+
+
+
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+
+    
+<div class="md:col-span-8 group relative overflow-hidden asymmetric-rounding-lg bg-surface-container-low">
+<img class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="dramatic wide shot of a luxury coffee shop interior with dark wood textures, warm hanging pendant lights, and soft morning steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4X2Oog4M3yzyMspCa96Jy8GKAmNkBrDGNyZFBfLKnf3rtvOGhNrOwyioDc2da1VoupjIU6sjHbpmTjSKO2L-ZUvWHs8MkW6a1C87BSXi-if_0SbjCW8bm5Zjus-bpMFFGuuak_WL4wcLwcAE3P9_he-40CGMi4gGyQ1gDqy0-_x_oILjSlHfOQPQSln78gJ4fQGF8PHtuF-djlpckup8ix0MV7s5I5WBaYPnr7ZvCsg9LwrdZK8pUcygfc8HAIBPQ-ZCKPb1o0s_P"/>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-background/80 to-transparent">
+<p class="font-headline text-xl text-primary">Главный зал</p>
+</div>
+</div>
+
+
+
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full min-h-[500px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="close-up of a barista expertly pouring milk into a dark ceramic cup creating intricate latte art swan pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb8j_vwh-4kMnXKK_xNwU1jKod7SAavk-dxjwtJFjeMHo_XZykZM7-pUjic8u6JShmS7P77rwFzeX0bT9GRT_WRjzi0RuTbF0iZO1MkYaU1giTP0W21Q5ElGztbBuOqj3oABS3SpxZ3a2PeAgoncPfEAr60gJDAep-X-S_Xs7Fl_eU062-ZQOog-E6Fvxzdz_mrEqZkMUuy43PweCrf1iFRQoTrhYvJG2DIi77IGf9iFPEEqTlGOk8M-_I6ZPxTSKXJDvL_Vu9GkS2"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/20 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">zoom_in</span>
+</div>
+</div>
+
+
+
+<div class="md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-low">
+<img class="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="aesthetic shot of roasted coffee beans in a vintage wooden bowl on a rustic mahogany table with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYpqIYgReyKBzKrF5YAG_Bp3Xieoj-gKTp_mtewrcR6zQD7xSwI4LSuvIExfHGFI_b_9_90EPdghuA6aX9sbsrceUtCDpdwwMW_-Us6jhN1e4x5ASiCdDzscbkNSdKndIKq7X_hPVk_e0Rji-kxuSm5z7Ex9Ek39tk2s6FF5AM_jQTEtdGJRAly0F2gcKPQSA9jnvnTdz2Jjmw2Sj8D6ZFk4y4dvBwt5YsQIsGKpmJgwF4oiD84G1oB6c2mQHpwjObasPdNEQXXENH"/>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-lg bg-surface-container-low">
+<img class="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="a minimalist glass of cold brew coffee with a single large ice cube on a dark stone coaster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcryGvmXRiIHNhvS1mIm_ErQCQNvLNn2uqiH7uRapWgbh-wrR7w87iD18MOkaXxBZSiZPuQavVrM5J3nkP41F0gOEBiYUvx5XOigWZmb3GcUQTFpg1qK5iqSAbCkfM1iGu6QLUJrSImExM_qWSF6lgRtgJEOxM4wSD_VNhukUAjBP6y3S2vzBT64a1dy-uzFwnhX0r19vJyaUokr4IkQ3MiqJBCXoJWtLFkyhdR1LgsPHHr6WpYSFmhVjjIP6gwtsHH5uhSd8o5nmi"/>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden asymmetric-rounding-lg bg-surface-container-low">
+<img class="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="moody interior shot of a quiet corner in the cafe with a leather armchair and a small bookshelf in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRJzx9syT8K_AMVNLvDaK6tg1qs1GfUrQEl1h4yDKeg59ypLtPftn_Luxs69rivNz8pFEzPIAPua7IbY8vLrUVNYZVskItx9RIx1GABRZg-pIXeG5MUmrq8Z9lJ-cV4Bv1H8bXA3msLOcS7gmHZeA0iEXzvp4qeVYOGkWKBh20oHB3Rh5zGzLHQS_1Omf2klRvZCkyImuaoHTxEQVQ3JJhtWIOj8GV2EhQT6Y0cL4acMgNGln67tgkyQK_kg5i5oAMErPjMZuLTicM"/>
+</div>
+
+
+
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-low mt-4">
+<img class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="wide panoramic view of the bustling coffee bar with stainless steel espresso machines and baristas in dark aprons working" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgTJfsHxU0ai85GBkIYm_FsKSjfRX8OYKiOlmGqGP3KNkcmH8jesFlKEYeZ4iR-eSWZzoYnuokhXbvlvVe5HK-14iOP_l6Hq920s5qZrWYvAN0lyoMJzlT6eXIQPYNF_3xt2oIqdjaEyFU3vO_a0_4f5BWXGvDvCkVkj4fLInpk8c8yAr1trRBQqmTKHsIR5nmJE6HxPwrtlYu1NKazd7foZavV8cG0ernrJv_ORTVi3WMk4Fxlyn3TKY0JgDlorEMGBHtsAQDKKT2"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-transparent flex items-center p-12">
+<h3 class="font-headline text-3xl text-secondary max-w-xs">Создаем совершенство ежедневно</h3>
+</div>
+</div>
+</section>
+  
+
+<section class="mt-32 py-20 border-t border-outline-variant/15 text-center">
+<blockquote class="max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block" data-weight="fill">format_quote</span>
+<p class="font-headline text-2xl md:text-3xl italic text-on-surface-variant leading-relaxed">
+                "Кофе — это отдельный язык. Мы просто помогаем вам найти правильные слова для вашего утра."
+            </p>
+<cite class="font-label text-sm uppercase tracking-widest text-primary mt-8 block not-italic">— Мастер обжарки, Nuri</cite>
+</blockquote>
+</section>
+</main>
+ 
+
+<footer class="w-full py-16 px-12 mt-auto bg-[#190a07] border-t border-[#cfc4c0]/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="font-headline text-xl text-[#e7bdb1]">Nuri Coffee</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Instagram</a>
+<a class="font-body text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Facebook</a>
+<a class="font-body text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Twitter</a>
+<a class="font-body text-sm tracking-widest uppercase text-[#cfc4c0]/50 hover:text-[#cfc4c0] transition-opacity" href="#">Политика конфиденциальности</a>
+</div>
+<div class="font-body text-sm tracking-widest uppercase text-[#cfc4c0]/50">
+            © 2024 Nuri Coffee. Ритуал кофейного зерна.
+        </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdbd0",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#d3c3c0",
+                        "on-primary-fixed-variant": "#4c4542",
+                        "surface-variant": "#44302b",
+                        "surface-bright": "#493430",
+                        "on-secondary-fixed": "#2c160e",
+                        "inverse-primary": "#655d5a",
+                        "inverse-surface": "#fcdbd4",
+                        "tertiary": "#ddc1b7",
+                        "on-primary": "#352f2d",
+                        "inverse-on-surface": "#402c27",
+                        "surface-container-low": "#291713",
+                        "background": "#1f0f0b",
+                        "on-secondary": "#442a22",
+                        "on-tertiary": "#3e2c26",
+                        "on-background": "#fcdbd4",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#fadcd2",
+                        "surface": "#1f0f0b",
+                        "primary-fixed": "#ece0dc",
+                        "surface-container": "#2d1b17",
+                        "secondary": "#e7bdb1",
+                        "on-tertiary-fixed": "#271812",
+                        "on-primary-container": "#8e8582",
+                        "secondary-fixed-dim": "#e7bdb1",
+                        "on-secondary-fixed-variant": "#5d4037",
+                        "on-secondary-container": "#d4aca0",
+                        "tertiary-container": "#2c1c16",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#ddc1b7",
+                        "primary-container": "#241e1c",
+                        "on-tertiary-container": "#9b8279",
+                        "on-surface": "#fcdbd4",
+                        "surface-container-lowest": "#190a07",
+                        "surface-dim": "#1f0f0b",
+                        "primary": "#cfc4c0",
+                        "surface-tint": "#cfc4c0",
+                        "on-primary-fixed": "#201a18",
+                        "on-tertiary-fixed-variant": "#56423b",
+                        "secondary-container": "#5d4037",
+                        "surface-container-highest": "#44302b",
+                        "primary-fixed-dim": "#cfc4c0",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#9c8e8b",
+                        "surface-container-high": "#392521",
+                        "outline-variant": "#4f4442"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #1f0f0b; color: #fcdbd4; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<nav class="sticky top-0 w-full z-50 bg-[#1f0f0b]/90 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif font-bold tracking-tighter text-[#cfc4c0]" href="#">Nuri Coffee</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-serif text-lg tracking-tight text-[#e7bdb1] border-b-2 border-[#e7bdb1] pb-1 transition-all duration-300" href="/главная/glav.html">Главная</a>
+<a class="font-serif text-lg tracking-tight text-[#cfc4c0]/70 hover:text-[#e7bdb1] transition-all duration-300" href="/о нас/indexx.html">О нас</a>
+<a class="font-serif text-lg tracking-tight text-[#cfc4c0]/70 hover:text-[#e7bdb1] transition-all duration-300" href="/меню/index.html">Меню</a>
+<a class="font-serif text-lg tracking-tight text-[#cfc4c0]/70 hover:text-[#e7bdb1] transition-all duration-300" href="/галерея/ind.html">Галерея</a>
+<a class="font-serif text-lg tracking-tight text-[#cfc4c0]/70 hover:text-[#e7bdb1] transition-all duration-300" href="/контакты/inde.html">Контакты</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label font-bold text-sm uppercase tracking-widest active:scale-95 duration-300 ease-in-out">
+                Забронировать
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 scale-105" data-alt="Close-up of premium dark roasted coffee beans with oily sheen under dramatic warm atmospheric lighting in a moody setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnWR3ojzA7ZpXBkMPgw0YavNxP9rjb2U_3w3vDgXSwOhimddypr4xhSNK2PLnBIH4oowOL0l59NER-u--TgBBH40W5C_FRWrSE-aB2aPvv-t8ZmhhBlu_PcCXVJbJgKyI_eXj4P5oh0NbQJhAVlvKJblXTcsKhfqCBjDC_C1rAgmaMw9fRCLzrIBVcskpB8EFw9o3zDvKf2q2gYY_jHFTyZfR8CzilJQoMx0u97FK5PAjJBv2zbgrZKkpbBbLADMF9LwFSVu24hIIT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 md:px-12">
+<div class="max-w-3xl">
+<span class="inline-block label-md text-secondary uppercase tracking-[0.3em] mb-6 font-bold">The Ritual</span>
+<h1 class="text-6xl md:text-8xl font-serif font-bold text-primary mb-8 leading-[1.1] tracking-tighter">Священный Ритуал Зерна</h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant mb-12 leading-relaxed max-w-xl">
+                    Искусство обжарки в каждой чашке. Откройте для себя глубину вкуса, рожденную в огне и страсти к совершенству.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label font-bold text-base uppercase tracking-widest transition-all hover:bg-white active:scale-95">
+                        Забронировать стол
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Section 1: Миссия -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden rounded-tl-[100px] rounded-br-[100px]">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Artisan barista pouring steamed milk into a ceramic cup creating latte art in a moody dark coffee shop environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD25jjrVK0KbUFahwrL_qMJjJydnNUjoVEEseej6fHGCjsmvVN5zLXUeDAidcevT2iS3GXMks0avg7s7e3BSnRcvx8p2vUauxq3nabtt0iR5aPr4Pn9FLlnEUyK6U3fYjm70fMtzTc90UUOiMMKWsISQW3XwQLbWS8rqYInZ4Q3rYBhOCfBuzeNvUmZ3K-SzmNRY3hoxCHIhutEOIBvzE99URLiw-0UCzcQ6KPKekB9eNZ1PimOkoF-EBJvkoM3GXLO-Vho21wpaYO1"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-surface-container-highest rounded-full flex items-center justify-center p-8 backdrop-blur-lg bg-opacity-40">
+<span class="text-secondary text-center font-serif italic text-lg leading-tight">Since 2024</span>
+</div>
+</div>
+<div>
+<h2 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-10">Наша миссия</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed font-body italic">
+<p>
+                        Для нас кофе — это не просто напиток. Это алхимия, превращающая утреннюю тишину в энергию созидания, а вечернюю встречу — в душевный разговор.
+                    </p>
+<p>
+                        Мы путешествуем по самым отдаленным уголкам планеты, чтобы найти то самое зерно, которое раскроет свою душу в ваших руках. Каждый этап — от сбора до финального пролива — это обещание качества.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Фирменные сорта (Bento Style) -->
+<section class="py-32 px-6 md:px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<h2 class="text-5xl font-serif font-bold text-primary mb-4">Фирменные сорта</h2>
+<p class="text-on-surface-variant font-body">Наследие терруара в каждой грануле</p>
+</div>
+<div class="h-px flex-grow bg-outline-variant/30 mx-12 hidden md:block mb-6"></div>
+<span class="text-secondary font-label uppercase tracking-widest text-sm font-bold">Roast Collection 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative overflow-hidden bg-surface rounded-xl transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" data-alt="Close up of a burlap bag of green coffee beans with sunlight hitting the texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMIE46aG1by4sN3a18G65gERZZeuxBiPe8o0ibcQf7590qWJucMpgaoOMb7J4m7KtIjysVAdhDDy6zIfA_15_djt_JV4t1KwlmZIrzEkwECxFMZBqGPArawH-hFDjP4ndVlFQ1M6p1zWmP0RaT98M97yIj1IRirhMnafYhi9DBcpg6cZub39U-sv-TIIx3hpXIxiwv6TCs735K7Y94NcFysBBpEHtET3vlAEFOREAvYqGthFORyXjr_2tx72Edq073FRo4WpNgpX9Q"/>
+</div>
+<div class="p-8">
+<span class="text-secondary text-xs font-label font-bold uppercase tracking-widest">Ethiopia Yirgacheffe</span>
+<h3 class="text-2xl font-serif font-bold mt-2 mb-4">Эфиопская Заря</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">Цветочные ноты жасмина с яркой кислинкой бергамота. Легкое тело и чистое послевкусие.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="text-primary font-serif">1 200 ₽</span>
+<span class="material-symbols-outlined text-secondary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative overflow-hidden bg-surface-container-highest rounded-xl transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" data-alt="Pour over coffee being prepared in a glass chemex with steam rising in a dark moody kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDppljE-JsBQAOn_8iFKySO_qlSn_cdI2M7Wth8gfg-v6OzYVbhwELIZwsdux_YcJ01qM_km9yf44QBbiDPvqlXdJQQpME_pYxUr6asftfBfnHxSYXK8qiBqhPl_w1tjozPgL7wBo_bfD_0e4ywP_KN0lHaPqYqaveAg1gP-gBz1yGrzRK2da6VBVH9UDlYmPqRJ9tc_PDfq2rIfj4RT60Cf0yKTAcFHPO1zBkKDp8NwFbGJ9yYl99f2k8etc8LK-MR_JhsxgdBH1Ew"/>
+</div>
+<div class="p-8">
+<span class="text-secondary text-xs font-label font-bold uppercase tracking-widest">Colombia Supremo</span>
+<h3 class="text-2xl font-serif font-bold mt-2 mb-4">Колумбийский Шелк</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">Классический баланс карамели и темного шоколада. Идеально для утреннего ритуала.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="text-primary font-serif">1 450 ₽</span>
+<span class="material-symbols-outlined text-secondary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative overflow-hidden bg-surface rounded-xl transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" data-alt="Dark roasted coffee beans in a wooden scoop with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVyO8SSFDvGFjd9Ym6iRhhZi764Zu2SmjZIedRBvAxo7mGf8o57dPyn-8YLJtVTOBMg883huKMb2E6iU9fuMFng7DxMwLrbdzB2sGzQhVwo8WLS8pGivkk_aU4hdpIK9-jvoUY3ukTkFY0RmPrNGyA5ZflKiI5Z5wObKq8C-6ze1xtb9lXpd0QV3E7CEgUhsvHZYr0h4WALGgtDADKENqyALwXdnHwsb3nPzFRcwhztX0joAl2eLg0BXW1idMdLCkSg4qKM0RHIaWZ"/>
+</div>
+<div class="p-8">
+<span class="text-secondary text-xs font-label font-bold uppercase tracking-widest">Indonesia Sumatra</span>
+<h3 class="text-2xl font-serif font-bold mt-2 mb-4">Суматранская Ночь</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">Землистые оттенки, специи и табак. Мощный вкус для истинных ценителей темной обжарки.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="text-primary font-serif">1300 ₽</span>
+<span class="material-symbols-outlined text-secondary">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Атмосфера -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<div class="grid md:grid-cols-12 gap-0 items-stretch bg-surface-container-lowest rounded-2xl overflow-hidden">
+<div class="md:col-span-7 relative h-[500px] md:h-auto">
+<img class="w-full h-full object-cover" data-alt="Interior of a luxury modern coffee shop with dark wood, warm amber lighting, and plush velvet seating in a minimalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC20S5gaVI6f0z61doI5rxzLJCAgDBiZXDDx4yo11uOpayJifnK6CgfNbHQsO92ayOMTaX7Hrjl2dW83t9SjCrmvrfSebIdKo2SCYcHT_RkN4i029O02R5wCQLLF6FTmpAtyaON3lyQwF_p1wtx4X2o7JZ5HlsE1NnRzceAXI8-nHNqFphanUgpOiOr6lHTRLbE_yKR_OfNC__eyLe5cMYPRE-Qg3-kAepauBJlNCYEdGgQ7CfOOIz0GEtCNh1E9sjnFmAW2ty04u3N"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="md:col-span-5 p-12 md:p-20 flex flex-col justify-center">
+<h2 class="text-4xl font-serif font-bold text-primary mb-8">Атмосфера</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10 font-body">
+                        В Nuri Coffee мы создали пространство, где время замедляется. Мягкий свет латунных ламп, запах свежемолотого зерна и текстура состаренного дерева — каждая деталь приглашает вас к созерцанию.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-sm uppercase tracking-wider">Камерный интерьер</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-sm uppercase tracking-wider">Виниловая проигрыватель</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-sm uppercase tracking-wider">Уединенные ниши</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-[#44302b]/20 bg-[#190a07]">
+<div class="flex flex-col items-center py-20 px-8 w-full max-w-screen-xl mx-auto">
+<div class="text-xl font-serif text-[#cfc4c0] mb-4">Nuri Coffee</div>
+<div class="flex gap-12 mb-12">
+<a class="font-sans text-xs uppercase tracking-[0.2em] font-medium text-[#cfc4c0]/50 hover:text-[#e7bdb1] transition-colors duration-500" href="#">Instagram</a>
+<a class="font-sans text-xs uppercase tracking-[0.2em] font-medium text-[#cfc4c0]/50 hover:text-[#e7bdb1] transition-colors duration-500" href="#">Telegram</a>
+<a class="font-sans text-xs uppercase tracking-[0.2em] font-medium text-[#cfc4c0]/50 hover:text-[#e7bdb1] transition-colors duration-500" href="#">Наш адрес</a>
+</div>
+<div class="text-center font-sans text-xs uppercase tracking-[0.2em] font-medium text-[#cfc4c0]/50">
+                © 2024 Nuri Coffee. Искусство в каждой чашке.
+            </div>
+</div>
+</footer>
+</body></html>
